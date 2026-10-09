@@ -1,0 +1,19 @@
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Production build
+dist/
+
+# Local env files
+.env
+.env.local
+
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.user

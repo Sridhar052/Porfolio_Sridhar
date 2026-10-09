@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #121212;
+    --card-bg: #1A1918;
+    --card-border: #2C2A26;
+    --text-primary: #EAE4D7;
+    --text-secondary: #AAA498;
+    --text-muted: #6E685E;
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'Space Grotesk', monospace;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Utilities for Deck Card Frame matching template.jpg */
+.deck-card-frame {
+  background-color: #1A1918;
+  border: 1px solid #2C2A26;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.03);
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', display, sans-serif;
+}
+
+.font-space {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
