@@ -8,6 +8,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: './', // Ensures relative asset paths work on GitHub Pages subpaths
+  build: {
+    outDir: 'dist',
+  },
   server: {
     port: 3000,
     open: false,

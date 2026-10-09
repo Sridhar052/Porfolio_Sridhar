@@ -8,10 +8,10 @@ export default function PortraitCanvas() {
 
       {/* Direct Floating Portrait Image without Frame */}
       <img
-        src="assets/sridhar.png"
+        src="./assets/sridhar.png"
         onError={(e) => {
           e.target.onerror = null;
-          e.target.src = 'assets/sridhar.jpeg';
+          e.target.src = './assets/sridhar.jpeg';
         }}
         alt="B. Sridhar"
         className="relative z-10 max-h-[480px] md:max-h-[540px] max-w-full object-contain filter drop-shadow-xl transition-transform duration-500 hover:scale-[1.02]"
